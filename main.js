@@ -1,9 +1,9 @@
 function mergeWithoutDuplicates(arrA,arrB){
 	const noDupHash = {};
-	arrA.map(function(x){
+	arrA.forEach(function(x){
 		noDupHash[x] = true;
 	})
-	arrB.map(function(x){
+	arrB.forEach(function(x){
 		noDupHash[x] = true;
 	})
 	return Object.keys(noDupHash);
